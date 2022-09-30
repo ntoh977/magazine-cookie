@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+#top {
+    position: absolute;
+    left: 72px;
+    transform: translateY(-93px);
+}
