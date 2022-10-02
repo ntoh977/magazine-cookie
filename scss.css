@@ -248,6 +248,47 @@ body {
   background-size: 100% 100%;
   background-color: #F5FBFC;
 }
+.block--menu .title__green {
+  margin-bottom: 27px;
+}
+.block--menu .texts__center {
+  font-size: 16px;
+  line-height: 27px;
+  /* or 169% */
+  text-align: center;
+  letter-spacing: 0.36px;
+  color: #546285;
+  max-width: 466px;
+  margin: 0 auto;
+  opacity: 0.7;
+}
+.block--menu .btns {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.block--menu .btns .btn {
+  background: #F5FBFC;
+  color: #08090A;
+  transition: all .3s;
+  outline: 1px solid rgba(97, 114, 131, 0.2);
+  margin-bottom: 56px;
+}
+.block--menu .btns .btn:hover {
+  background: #35B8BE;
+  color: #FFFFFF;
+  transition: all .3s;
+  outline: 1px solid rgba(97, 114, 131, 0.2);
+}
+
+.btn {
+  display: inline-flex;
+  margin-top: 59px;
+  padding: 19px 35px;
+  background: #35B8BE;
+  border-radius: 6px;
+  color: #FFFFFF;
+}
 
 @media (max-width: 1208px) {
   .blogs__container {
