@@ -8,10 +8,13 @@ li {
     list-style: none;
 }
 
-body {}
+body {
+    font-family: 'Inter';
+    font-style: normal;
+}
 
 .container {
-    max-width: 1920px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 132px;
 }
@@ -54,7 +57,8 @@ body {}
     align-items: center;
     justify-content: space-between;
     padding: 26px 0;
-background-image: url("./img/back__top.png");
+    background-image: url("./img/back__top.png");
+
     .menu {
         display: flex;
         align-items: center;
@@ -70,6 +74,13 @@ background-image: url("./img/back__top.png");
 
 
             color: #28224B;
+            transition: all .3s;
+
+            &:hover {
+                cursor: pointer;
+                color: #35B8BE;
+                transition: all .3s;
+            }
         }
     }
 
@@ -83,5 +94,99 @@ background-image: url("./img/back__top.png");
             top: 50%;
             transform: translate(-50%, -50%);
         }
+    }
+}
+
+.block__title {
+    display: flex;
+    background: url(./img/BG\ Shape.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    .left {
+        padding: 45px 20px 140px 20px;
+
+        .title {
+
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 60px;
+            /* or 100% */
+
+            letter-spacing: 1.8px;
+
+            color: #08090A;
+
+            span {
+                color: #35B8BE;
+            }
+        }
+
+        .text {
+            margin-top: 27px;
+            font-size: 18px;
+            line-height: 24px;
+            /* or 134% */
+            font-weight: 400;
+            letter-spacing: 0.36px;
+
+            color: #546285
+        }
+
+        .btn {
+            display: inline-flex;
+            margin-top: 59px;
+            padding: 19px 35px;
+            background: #35B8BE;
+            border-radius: 6px;
+            color: #FFFFFF;
+        }
+
+        .statistic__container {
+            margin-top: 39px;
+
+            .img__star_nametrast {
+                display: flex;
+                gap: 3px;
+                height: 20px;
+                margin-bottom: 20px;
+            }
+
+            .statistic {
+                font-size: 16px;
+                line-height: 20px;
+                /* identical to box height, or 125% */
+
+
+                color: #35B8BE;
+            }
+
+            .text {
+                font-size: 16px;
+                line-height: 20px;
+                /* identical to box height, or 125% */
+
+
+                color: #08090A;
+
+            }
+        }
+    }
+}
+
+@media (max-width:651px) {
+    .menu__mean {
+        flex-wrap: wrap;
+    }
+
+    .menu__mean .menu {
+        padding-left: 0;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:340px) {
+    .menu__mean .menu {
+        padding-left: 0;
     }
 }

@@ -7,8 +7,13 @@ li {
   list-style: none;
 }
 
+body {
+  font-family: 'Inter';
+  font-style: normal;
+}
+
 .container {
-  max-width: 1920px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 132px;
 }
@@ -60,6 +65,12 @@ li {
   line-height: 20px;
   /* identical to box height, or 133% */
   color: #28224B;
+  transition: all .3s;
+}
+.menu__mean .menu li:hover {
+  cursor: pointer;
+  color: #35B8BE;
+  transition: all .3s;
 }
 .menu__mean .backet {
   position: relative;
@@ -70,6 +81,81 @@ li {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.block__title {
+  display: flex;
+  background: url(./img/BG\ Shape.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.block__title .left {
+  padding: 45px 20px 140px 20px;
+}
+.block__title .left .title {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  /* or 100% */
+  letter-spacing: 1.8px;
+  color: #08090A;
+}
+.block__title .left .title span {
+  color: #35B8BE;
+}
+.block__title .left .text {
+  margin-top: 27px;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 134% */
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  color: #546285;
+}
+.block__title .left .btn {
+  display: inline-flex;
+  margin-top: 59px;
+  padding: 19px 35px;
+  background: #35B8BE;
+  border-radius: 6px;
+  color: #FFFFFF;
+}
+.block__title .left .statistic__container {
+  margin-top: 39px;
+}
+.block__title .left .statistic__container .img__star_nametrast {
+  display: flex;
+  gap: 3px;
+  height: 20px;
+  margin-bottom: 20px;
+}
+.block__title .left .statistic__container .statistic {
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  color: #35B8BE;
+}
+.block__title .left .statistic__container .text {
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  color: #08090A;
+}
+
+@media (max-width: 651px) {
+  .menu__mean {
+    flex-wrap: wrap;
+  }
+
+  .menu__mean .menu {
+    padding-left: 0;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 340px) {
+  .menu__mean .menu {
+    padding-left: 0;
+  }
 }
 
 /*# sourceMappingURL=scss.css.map */
