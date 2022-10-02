@@ -13,7 +13,7 @@ body {}
 .container {
     max-width: 1920px;
     margin: 0 auto;
-     padding: 0 132px;
+    padding: 0 132px;
 }
 
 #top {
@@ -52,8 +52,9 @@ body {}
 .menu__mean {
     display: flex;
     align-items: center;
- justify-content: space-between;
-padding: 26px 0;
+    justify-content: space-between;
+    padding: 26px 0;
+background-image: url("./img/back__top.png");
     .menu {
         display: flex;
         align-items: center;
@@ -80,7 +81,7 @@ padding: 26px 0;
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
         }
     }
 }
