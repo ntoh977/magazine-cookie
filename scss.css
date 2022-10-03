@@ -748,5 +748,12 @@ footer .left .text {
     line-height: 42px;
   }
 }
+@media (min-width: 1990px) {
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 132px;
+  }
+}
 
 /*# sourceMappingURL=scss.css.map */
