@@ -896,7 +896,7 @@ footer {
     }
 }
 @media (min-width:1990px) {
-    .container {
+    .container,.footer {
         max-width: 1440px;
         margin: 0 auto;
         padding: 0 132px;
